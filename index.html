@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Empório Vizinho — Mercearia de bairro | Peça no WhatsApp</title>
+<meta name="description" content="Empório Vizinho: mercearia de bairro com hortifruti fresco, padaria, açougue e mercearia seca. Peça pelo WhatsApp e receba ainda hoje, pertinho de casa.">
+<meta property="og:title" content="Empório Vizinho — Mercearia de bairro">
+<meta property="og:description" content="Produtos frescos, preço justo e entrega rápida no seu bairro. Peça no WhatsApp.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700;9..144,900&family=Karla:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     ATENÇÃO — DADOS DE PLACEHOLDER (substituir antes de publicar):
+     1) Número de WhatsApp: 5521999999999 (formato internacional, sem +, sem espaços)
+     2) Endereço, horário de funcionamento e nome da rua no rodapé
+     3) Link do Google Maps (href="#mapa-link")
+     4) Instagram/Facebook (hrefs "#")
+     5) Nome dos depoimentos e história em "Sobre" são fictícios
+     6) Fotos vêm do Unsplash como placeholder — trocar por fotos reais da loja/produtos
+     7) Hora de fechamento usada no contador (20h) — ajustar em WA_CONFIG no JS
+     ============================================================ -->
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#topo" class="brand">
+      <span class="brand-mark">EV</span>
+      Empório Vizinho
+    </a>
+    <ul class="nav-links">
+      <li><a href="#produtos">Produtos</a></li>
+      <li><a href="#diferenciais">Diferenciais</a></li>
+      <li><a href="#depoimentos">Depoimentos</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#" class="btn btn-primary wa-link" data-msg="Oi! Vim pelo site e quero fazer um pedido 🛒">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.46 1.29 4.91L2 22l5.31-1.39a9.9 9.9 0 0 0 4.73 1.2h.01c5.46 0 9.91-4.45 9.91-9.9 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 8.1 8.11c0 4.47-3.63 8.1-8.1 8.1a8.05 8.05 0 0 1-4.12-1.13l-.29-.17-3.08.81.82-3-.19-.31a8.03 8.03 0 0 1-1.24-4.3 8.1 8.1 0 0 1 8.1-8.11m-4.42 4.5c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.06s.89 2.39 1.01 2.56c.13.17 1.76 2.8 4.36 3.82 2.16.85 2.6.68 3.07.64.47-.04 1.51-.62 1.72-1.21.21-.6.21-1.11.15-1.22-.07-.1-.24-.17-.5-.3-.27-.13-1.52-.75-1.76-.84-.24-.08-.4-.13-.58.13-.17.26-.66.83-.81 1-.15.17-.3.19-.56.06-.27-.13-1.12-.41-2.13-1.31-.79-.7-1.32-1.57-1.47-1.83-.15-.26-.02-.41.11-.54.12-.12.27-.3.4-.46.13-.15.17-.26.26-.43.09-.17.04-.33-.02-.46-.06-.13-.58-1.46-.82-1.99-.21-.48-.42-.46-.58-.47Z"/></svg>
+        Pedir no WhatsApp
+      </a>
+    </div>
+    <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#produtos">Produtos</a>
+  <a href="#diferenciais">Diferenciais</a>
+  <a href="#depoimentos">Depoimentos</a>
+  <a href="#sobre">Sobre</a>
+  <a href="#contato">Contato</a>
+  <a href="#" class="btn btn-primary btn-block wa-link" data-msg="Oi! Vim pelo site e quero fazer um pedido 🛒">Pedir no WhatsApp</a>
+</div>
+
+<!-- HERO -->
+<section class="hero paper-texture" id="topo">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow hero-eyebrow"><span class="dot"></span> Mercearia de bairro • pedidos pelo zap</div>
+      <h1>A mercearia que <em>sabe seu nome</em> — e entrega em minutos.</h1>
+      <p class="hero-sub">Hortifruti fresquinho, padaria, açougue e tudo que falta na despensa, sem sair de casa. Manda um "oi" no WhatsApp e a sua compra chega ainda hoje, na porta.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn btn-primary wa-link" data-msg="Oi! Quero fazer um pedido no Empório Vizinho 🛒">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.46 1.29 4.91L2 22l5.31-1.39a9.9 9.9 0 0 0 4.73 1.2h.01c5.46 0 9.91-4.45 9.91-9.9 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 8.1 8.11c0 4.47-3.63 8.1-8.1 8.1a8.05 8.05 0 0 1-4.12-1.13l-.29-.17-3.08.81.82-3-.19-.31a8.03 8.03 0 0 1-1.24-4.3 8.1 8.1 0 0 1 8.1-8.11m-4.42 4.5c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.06s.89 2.39 1.01 2.56c.13.17 1.76 2.8 4.36 3.82 2.16.85 2.6.68 3.07.64.47-.04 1.51-.62 1.72-1.21.21-.6.21-1.11.15-1.22-.07-.1-.24-.17-.5-.3-.27-.13-1.52-.75-1.76-.84-.24-.08-.4-.13-.58.13-.17.26-.66.83-.81 1-.15.17-.3.19-.56.06-.27-.13-1.12-.41-2.13-1.31-.79-.7-1.32-1.57-1.47-1.83-.15-.26-.02-.41.11-.54.12-.12.27-.3.4-.46.13-.15.17-.26.26-.43.09-.17.04-.33-.02-.46-.06-.13-.58-1.46-.82-1.99-.21-.48-.42-.46-.58-.47Z"/></svg>
+          Fazer pedido agora
+        </a>
+        <a href="#produtos" class="btn btn-ghost">Ver o que tem hoje</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>18</b><span>Anos no bairro</span></div>
+        <div class="stat"><b>+40mil</b><span>Pedidos entregues</span></div>
+        <div class="stat"><b>4.9★</b><span>Avaliação Google</span></div>
+        <div class="stat"><b>~25min</b><span>Entrega média</span></div>
+      </div>
+    </div>
+
+    <div class="receipt-wrap">
+      <div class="receipt-floaters">
+        <div class="floater f1">fresquinho hoje 🥬</div>
+        <div class="floater f2">entrega em 25min 🛵</div>
+      </div>
+      <div class="receipt">
+        <div class="receipt-head">
+          <b>EMPÓRIO VIZINHO</b>
+          <span>PEDIDO Nº 0842 — HOJE</span>
+        </div>
+        <div class="receipt-dash"></div>
+        <div class="receipt-line" style="animation-delay:.1s"><span>Alface + tomate</span><b>R$ 9,90</b></div>
+        <div class="receipt-line" style="animation-delay:.3s"><span>Pão francês (10un)</span><b>R$ 7,00</b></div>
+        <div class="receipt-line" style="animation-delay:.5s"><span>Picanha 1kg</span><b>R$ 62,90</b></div>
+        <div class="receipt-line" style="animation-delay:.7s"><span>Café + leite</span><b>R$ 18,50</b></div>
+        <div class="receipt-line" style="animation-delay:.9s"><span>Detergente + esponja</span><b>R$ 6,40</b></div>
+        <div class="receipt-total"><span>Total</span><span>R$ 104,70</span></div>
+        <div class="receipt-tail"></div>
+        <div class="receipt-stamp">ENTREGUE<br>NO BAIRRO</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFÍCIOS -->
+<section class="beneficios" id="beneficios">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Por que o vizinho escolhe a gente</div>
+      <h2>Tudo o que o supermercado grande não te dá</h2>
+      <p>Sem fila, sem estacionamento lotado e sem produto "meio murcho". Só o que você precisa, do jeito que você gosta.</p>
+    </div>
+    <div class="beneficios-grid">
+      <div class="beneficio-card reveal">
+        <div class="beneficio-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
+        <h3>Entrega rápida de verdade</h3>
+        <p>Pedido feito, moto na rua. A maioria das entregas do bairro sai em até 30 minutos.</p>
+      </div>
+      <div class="beneficio-card reveal">
+        <div class="beneficio-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg></div>
+        <h3>Fresco todo santo dia</h3>
+        <p>Hortifruti e padaria repostos diariamente. Se não tá bom pra sua família, não vai pro balcão.</p>
+      </div>
+      <div class="beneficio-card reveal">
+        <div class="beneficio-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+        <h3>Preço justo, sem pegadinha</h3>
+        <p>Preço de mercadinho de bairro, não de conveniência. Você sabe exatamente quanto vai pagar.</p>
+      </div>
+      <div class="beneficio-card reveal">
+        <div class="beneficio-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+        <h3>Atendimento de gente, não de robô</h3>
+        <p>Você fala com quem conhece sua rua e sabe o que você costuma pedir. Sem menu de central telefônica.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="perf-divider on-paper"></div>
+
+<!-- PRODUTOS -->
+<section class="produtos" id="produtos">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">O que tem no balcão</div>
+      <h2>Escolha a seção, a gente separa e manda pra você</h2>
+      <p>Toque em "pedir" e o WhatsApp já abre com a seção certa — é só completar sua lista por lá.</p>
+    </div>
+
+    <div class="produtos-list">
+      <div class="produto-row reveal" data-cat="Hortifruti">
+        <span class="produto-num">01</span>
+        <div class="produto-thumb"><img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?w=200&h=200&fit=crop" alt="Cesta de verduras e legumes frescos"></div>
+        <div class="produto-info">
+          <h3>Hortifruti fresquinho</h3>
+          <p>Verduras, legumes e frutas selecionadas toda manhã direto do produtor.</p>
+        </div>
+        <a href="#" class="produto-cta wa-link" data-msg="Oi! Quero pedir itens do Hortifruti 🥬">Pedir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+
+      <div class="produto-row reveal" data-cat="Padaria">
+        <span class="produto-num">02</span>
+        <div class="produto-thumb"><img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=200&h=200&fit=crop" alt="Pães frescos e frios de padaria"></div>
+        <div class="produto-info">
+          <h3>Padaria &amp; frios</h3>
+          <p>Pão quentinho, queijos, presunto e frios fatiados na hora do pedido.</p>
+        </div>
+        <a href="#" class="produto-cta wa-link" data-msg="Oi! Quero pedir itens da Padaria e Frios 🥖">Pedir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+
+      <div class="produto-row reveal" data-cat="Açougue">
+        <span class="produto-num">03</span>
+        <div class="produto-thumb"><img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=200&h=200&fit=crop" alt="Cortes de carne fresca no açougue"></div>
+        <div class="produto-info">
+          <h3>Açougue</h3>
+          <p>Cortes na medida certa, do jeito que sua receita pede — sem gordura sobrando.</p>
+        </div>
+        <a href="#" class="produto-cta wa-link" data-msg="Oi! Quero pedir itens do Açougue 🥩">Pedir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+
+      <div class="produto-row reveal" data-cat="Mercearia seca">
+        <span class="produto-num">04</span>
+        <div class="produto-thumb"><img src="https://images.unsplash.com/photo-1543168256-418811576931?w=200&h=200&fit=crop" alt="Prateleira com mercearia seca e enlatados"></div>
+        <div class="produto-info">
+          <h3>Mercearia seca &amp; bebidas</h3>
+          <p>Arroz, feijão, óleo, café, refrigerante e o que mais faltar na despensa.</p>
+        </div>
+        <a href="#" class="produto-cta wa-link" data-msg="Oi! Quero pedir itens da Mercearia seca 🛒">Pedir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+
+      <div class="produto-row reveal" data-cat="Limpeza">
+        <span class="produto-num">05</span>
+        <div class="produto-thumb"><img src="https://images.unsplash.com/photo-1585421514738-01798e348b17?w=200&h=200&fit=crop" alt="Produtos de limpeza e higiene"></div>
+        <div class="produto-info">
+          <h3>Limpeza &amp; higiene</h3>
+          <p>Detergente, sabão em pó, papel higiênico e itens do dia a dia da casa.</p>
+        </div>
+        <a href="#" class="produto-cta wa-link" data-msg="Oi! Quero pedir itens de Limpeza e Higiene 🧽">Pedir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+
+      <div class="produto-row reveal" data-cat="Encomendas">
+        <span class="produto-num">06</span>
+        <div class="produto-thumb"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=200&h=200&fit=crop" alt="Mesa preparada para churrasco e festa"></div>
+        <div class="produto-info">
+          <h3>Encomendas para festa &amp; churrasco</h3>
+          <p>Carvão, carnes em quantidade, bebidas geladas e tudo pro seu churras de fim de semana.</p>
+        </div>
+        <a href="#" class="produto-cta wa-link" data-msg="Oi! Quero fazer uma encomenda para festa/churrasco 🍖">Pedir <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section class="diferenciais" id="diferenciais">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Comparando de verdade</div>
+      <h2>Mercadinho de bairro x supermercado grande</h2>
+      <p>Não é sobre ser maior. É sobre ser o mais perto, mais rápido e mais gente boa com você.</p>
+    </div>
+    <div class="compare reveal">
+      <div class="head"></div>
+      <div class="head you">Empório Vizinho</div>
+      <div class="head">Supermercado grande</div>
+
+      <div class="row-label">Tempo até a compra chegar em casa</div>
+      <div class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> ~25 minutos</div>
+      <div class="no">1 a 3 dias (frete agendado)</div>
+
+      <div class="row-label">Atendimento</div>
+      <div class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Direto com quem te conhece</div>
+      <div class="no">Central de atendimento genérica</div>
+
+      <div class="row-label">Fila e deslocamento</div>
+      <div class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Zero — pede do sofá</div>
+      <div class="no">Estacionamento, fila, caixa</div>
+
+      <div class="row-label">Pedido mínimo pra entregar</div>
+      <div class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Sem mínimo no bairro</div>
+      <div class="no">Geralmente exige valor mínimo alto</div>
+
+      <div class="row-label">Ajuste no pedido depois de enviado</div>
+      <div class="yes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> Chama no zap e resolve na hora</div>
+      <div class="no">Cancela e refaz tudo pelo app</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROVA SOCIAL -->
+<section class="prova" id="depoimentos">
+  <div class="container">
+    <div class="prova-top reveal">
+      <div class="section-head" style="margin-bottom:0;">
+        <div class="eyebrow">Quem já pediu, confirma</div>
+        <h2>O bairro inteiro já faz compra por aqui</h2>
+      </div>
+      <div class="rating-badge">
+        <b>4.9</b>
+        <div>
+          <div class="stars">★★★★★</div>
+          <span>+320 avaliações no Google</span>
+        </div>
+      </div>
+    </div>
+    <div class="depoimentos">
+      <div class="depo-card reveal">
+        <p class="depo-quote">"Peço quase toda semana. Chega rápido e as verduras vêm sempre fresquinhas, parece que acabei de sair da feira."</p>
+        <div class="depo-person">
+          <div class="depo-avatar"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop" alt="Cliente do Empório Vizinho"></div>
+          <div><b>Marta Oliveira</b><span>Cliente há 3 anos</span></div>
+        </div>
+      </div>
+      <div class="depo-card reveal">
+        <p class="depo-quote">"Faltou carvão em cima da hora no domingo do churrasco e chegou em 20 minutos. Já virei cliente fiel."</p>
+        <div class="depo-person">
+          <div class="depo-avatar"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop" alt="Cliente do Empório Vizinho"></div>
+          <div><b>Rafael Costa</b><span>Mora a 2 quadras</span></div>
+        </div>
+      </div>
+      <div class="depo-card reveal">
+        <p class="depo-quote">"O que eu mais gosto é que eles sabem do que eu preciso, mando áudio e já entendem meu pedido bagunçado."</p>
+        <div class="depo-person">
+          <div class="depo-avatar"><img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=100&h=100&fit=crop" alt="Cliente do Empório Vizinho"></div>
+          <div><b>Dona Isabel</b><span>Cliente desde a fundação</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="sobre" id="sobre">
+  <div class="container sobre-grid">
+    <div class="sobre-photo reveal">
+      <img src="https://images.unsplash.com/photo-1601599963565-b7f49deb0f4d?w=700&h=880&fit=crop" alt="Dono da mercearia organizando produtos frescos na loja">
+      <div class="sobre-badge"><b>1976</b><span>Ano de fundação</span></div>
+    </div>
+    <div class="sobre-text reveal">
+      <div class="eyebrow">A nossa história</div>
+      <h2>Três gerações cuidando da compra do seu bairro</h2>
+      <p>Tudo começou com uma barraca de feira do seu avô Antônio, que conhecia cada família da rua pelo nome. Hoje, o Empório Vizinho segue a mesma lógica — só que com WhatsApp em vez de caderninho de fiado.</p>
+      <p>A gente escolhe cada verdura, cada corte de carne e cada produto de prateleira como se fosse pra nossa própria casa. Porque, no fim, é isso: continuamos sendo vizinhos.</p>
+      <p class="assinatura">— Família Ferreira, à frente do balcão desde 1976</p>
+    </div>
+  </div>
+</section>
+
+<div class="perf-divider on-verde"></div>
+
+<!-- CTA FINAL -->
+<section class="cta-final" id="contato">
+  <div class="container inner">
+    <h2 class="reveal">Peça hoje e já recebe em casa</h2>
+    <p class="reveal">Fazemos entrega no bairro todos os dias. Peça até o fechamento e sua compra chega ainda hoje.</p>
+
+    <div class="countdown reveal" id="countdown">
+      <div class="unit"><b id="cd-h">00</b><span>Horas</span></div>
+      <div class="unit"><b id="cd-m">00</b><span>Min</span></div>
+      <div class="unit"><b id="cd-s">00</b><span>Seg</span></div>
+    </div>
+
+    <a href="#" class="btn btn-selo pulse wa-link reveal" data-msg="Oi! Quero fazer um pedido agora no Empório Vizinho 🛒">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.46 1.29 4.91L2 22l5.31-1.39a9.9 9.9 0 0 0 4.73 1.2h.01c5.46 0 9.91-4.45 9.91-9.9 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 8.1 8.11c0 4.47-3.63 8.1-8.1 8.1a8.05 8.05 0 0 1-4.12-1.13l-.29-.17-3.08.81.82-3-.19-.31a8.03 8.03 0 0 1-1.24-4.3 8.1 8.1 0 0 1 8.1-8.11m-4.42 4.5c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.06s.89 2.39 1.01 2.56c.13.17 1.76 2.8 4.36 3.82 2.16.85 2.6.68 3.07.64.47-.04 1.51-.62 1.72-1.21.21-.6.21-1.11.15-1.22-.07-.1-.24-.17-.5-.3-.27-.13-1.52-.75-1.76-.84-.24-.08-.4-.13-.58.13-.17.26-.66.83-.81 1-.15.17-.3.19-.56.06-.27-.13-1.12-.41-2.13-1.31-.79-.7-1.32-1.57-1.47-1.83-.15-.26-.02-.41.11-.54.12-.12.27-.3.4-.46.13-.15.17-.26.26-.43.09-.17.04-.33-.02-.46-.06-.13-.58-1.46-.82-1.99-.21-.48-.42-.46-.58-.47Z"/></svg>
+      Fazer pedido no WhatsApp
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#topo" class="brand"><span class="brand-mark">EV</span>Empório Vizinho</a>
+        <p>Mercearia de bairro com hortifruti fresco, padaria, açougue e mercearia seca, direto no seu WhatsApp.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" class="wa-link" data-msg="Oi! Vim pelo site do Empório Vizinho" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.46 1.29 4.91L2 22l5.31-1.39a9.9 9.9 0 0 0 4.73 1.2h.01c5.46 0 9.91-4.45 9.91-9.9 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2Z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#sobre">Sobre nós</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Horário</h4>
+        <ul>
+          <li>Seg a sáb: 7h às 20h</li>
+          <li>Domingo: 8h às 14h</li>
+          <li>Entrega todos os dias</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li>Rua das Flores, 123 — Bairro Modelo</li>
+          <li><a href="#mapa-link">Ver no mapa</a></li>
+          <li><a href="#" class="wa-link" data-msg="Oi! Vim pelo site do Empório Vizinho">(21) 99999-9999</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Empório Vizinho — Mercearia de bairro. Todos os direitos reservados.</span>
+      <span>Feito com carinho pro bairro 💚</span>
+    </div>
+  </div>
+</footer>
+
+<!-- BOTÃO WHATSAPP FLUTUANTE -->
+<a href="#" class="wa-float wa-link" data-msg="Oi! Vim pelo site e quero fazer um pedido 🛒" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.46 1.29 4.91L2 22l5.31-1.39a9.9 9.9 0 0 0 4.73 1.2h.01c5.46 0 9.91-4.45 9.91-9.9 0-2.65-1.03-5.14-2.9-7.01A9.86 9.86 0 0 0 12.04 2m0 1.8a8.1 8.1 0 0 1 8.1 8.11c0 4.47-3.63 8.1-8.1 8.1a8.05 8.05 0 0 1-4.12-1.13l-.29-.17-3.08.81.82-3-.19-.31a8.03 8.03 0 0 1-1.24-4.3 8.1 8.1 0 0 1 8.1-8.11m-4.42 4.5c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.06s.89 2.39 1.01 2.56c.13.17 1.76 2.8 4.36 3.82 2.16.85 2.6.68 3.07.64.47-.04 1.51-.62 1.72-1.21.21-.6.21-1.11.15-1.22-.07-.1-.24-.17-.5-.3-.27-.13-1.52-.75-1.76-.84-.24-.08-.4-.13-.58.13-.17.26-.66.83-.81 1-.15.17-.3.19-.56.06-.27-.13-1.12-.41-2.13-1.31-.79-.7-1.32-1.57-1.47-1.83-.15-.26-.02-.41.11-.54.12-.12.27-.3.4-.46.13-.15.17-.26.26-.43.09-.17.04-.33-.02-.46-.06-.13-.58-1.46-.82-1.99-.21-.48-.42-.46-.58-.47Z"/></svg>
+</a>
+
+<script src="js/script.js" defer></script>
+</body>
+</html>
